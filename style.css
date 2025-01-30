@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-family:'open sans',sans-serif;
+    scroll-behavior:smooth;
+}
+img{
+    width:100%;
+}
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px;
+    width:100%;
+    height:70px;
+    position:absolute;
+    z-index:1;
+
+}
+header .logo a{
+  font-size:30px;
+  color:white;
+  padding:15px 30px;
+}
+header a span{
+    color:orange;
+}
+header nav ul{
+    display:flex;
+}
+header nav ul li a{
+    margin:5px 20px;
+    font-size:18px;
+    color:white;
+    padding:10px 10px;
+}
+header nav ul li a:hover{
+    border-bottom:2px solid white;
+}
+.fas fa-user-circle{
+    color:red;
+    background-color: #ff6600;
+    text-decoration: none;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(to bottom right,rgb(96, 76,76, .6),rgb(96, 76, 76,.6)),
+    url("images/bg-image.jpeg");
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content h2{
+    font-size:32px;
+    padding:5px;
+    color:white;
+}
+.content p{
+    font-size:22px;
+    color:white;
+}
+
+.menu{
+    background-color:#333333;
+    width:100%;
+}
+.menu .menu-header{
+    display:flex;
+    padding:10px;
+    align-items:center;
+    justify-content: space-between;
+}
+.menu-header h3{
+    color:orange;
+    padding: 10px 30px;
+}
+.menu-header h4{
+    color:orange;
+    padding:10px 20px;
+}
+.menu .menu-content{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding:50px 0;
+    flex-wrap:wrap;
+    background-color: #404040;
+}
+.menu .menu-content .hot-coffees,
+.cold-coffees,
+.frappucino-coffees{
+width:250px;
+}
+.menu .menu-content .hot-coffees .hot-coffees-image img{
+    border-radius:50%;
+}
+.menu .menu-content .cold-coffees .cold-coffees-image img{
+    border-radius:50%;
+}
+.menu .menu-content .frappucino-coffees .frappucino-coffees-image img{
+    border-radius:50%;
+}
+
+.menu .menu-content .hot-coffees-body,
+ .cold-coffees-body,
+ .frappucino-coffees-body{
+   text-align: center;
+   margin-top:10px;
+ }
+
+ .menu .menu-content .hot-coffees-body h2,
+ .cold-coffees-body h2,
+ .frappucino-coffees-body h2{
+   color:orange;
+ }
+
+ .menu .menu-content .hot-coffees-body label,
+ .cold-coffees-body label,
+ .frappucino-coffees-body label{
+   color:white;
+   margin-top:10px;
+ }
+
+ /*                         Shop                      */
+
+ .shop{
+    background-color:#333333;
+    width:100%;
+ }
+ .shop .shop-header{
+     display:flex;
+     padding:20px;
+     align-items:center;
+     justify-content: space-between;
+ }
+.shop-header h3{
+    color:orange;
+    padding:10px 30px;
+}
+.shop-header h4{
+    color:orange;
+    padding:10px 20px;
+}
+.shop-box{
+    display:flex;
+    align-items:space-evenly;
+    background-color:#404040;
+    padding:50px 0;
+    flex-wrap:wrap;
+}
+.shop-box .card{
+    width:280px;
+    margin:20px;
+}
+.shop-box .card-image{
+    width:100%;
+    height:280px;
+    overflow:hidden;
+}
+.shop-box .card-image img:hover{
+    transform:scale(1.1);
+    transition:transform .4s ease-in-out;
+}
+.shop-box .card-body{
+    padding:20px;
+    color:white;
+    border:3px solid #333333;
+}
+.shop-box .card-body h3{
+   padding:10px 0;
+}
+.shop-box .card-body i{
+    color:yellow;
+    font-size:10px;
+    position:relative;
+    bottom:5px;
+}
+.shop-box .card-body .cash{
+    font-size:22px;
+    margin-left:90px;
+}
+.button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.buy-button {
+    background-color:goldenrod; 
+    color: white;
+}
+.cart-button {
+    background-color: #611d10; 
+    color: white;
+    margin-left: 40px;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+/*------------Contact-------------------------------*/
+
+.contact{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    border-top:2px solid #333333;
+}
+.contact .contact-box{
+    flex:1;
+}
+.contact .contact-box .contact-image,
+.contact .contact-box .contact-body{
+    height:100%;
+}
+.contact img{
+    width:100%;
+    height:100%;
+}
+.contact-image img{
+    opacity:.9;
+}
+.contact-body{
+    background-color:#404040 ;
+    height:100%;
+    border-left:2px solid #333333;
+}
+.contact-body form{
+    padding:50px 40px;
+    box-sizing:border-box;
+}
+
+.contact-body h2{
+    color:orange;
+}
+form .form-content{
+    position:relative;
+    margin:30px 0;
+    border-bottom:2px solid lightgray;;
+}
+
+form .form-content input{
+    width:100%;
+    height:40px;
+    padding:0 5px;
+    font-size:17px;
+    border:none;
+    background:none;
+    outline:none;
+    color:white;
+}
+form .form-content label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    color:gray;
+    transform:translateY(-50%);
+    font-size: 17px;
+    transition:0.5s;
+    pointer-events:none;
+}
+
+form .form-content span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width:0%;
+    height:2px;
+    background: orange;
+    transform:.4s;
+}
+
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+    top:-5px;
+    color:orange;
+}
+
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before{
+ width:100%;
+}
+
+.contact-body form button{
+    padding:10px 20px;
+    font-size:17px;
+    border:none;
+    background-color:#ff6600;
+    color:white;
+    border:5px;
+    cursor:pointer;
+    transition:all .4s ease-in;
+}
+
+.content-body form button:hover{
+    background-color: #ff6681;
+}
+/*                     sigin....                 */
+.signin .signin-box{
+    flex:1;
+}
+    .signin {
+        width: 300px; 
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.signin .signin-box ,
+.signin .signin-box .signin-body{
+    height:100%;
+}
+.signin-body form{
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+
+ h2{
+    text-align: center;
+    margin:50px;
+    color: #fff;
+}
+form .signin-content{
+    position:relative;
+    margin:30px 0;
+    border-bottom:2px solid lightgray;
+}
+form img{
+    height:60px;
+    width:80px;
+    margin-left:50px;
+}
+
+form .signin-content input{
+    width:100%;
+    height:40px;
+    padding:0 5px;
+    font-size:17px;
+    border:none;
+    background:none;
+    outline:none;
+    color:black;
+}
+form .signin-content label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    color:gray;
+    transform:translateY(-50%);
+    font-size: 20px;
+    transition:0.5s;
+    pointer-events:none;
+}
+
+form .signin-content span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width:0%;
+    height:2px;
+    background: orange;
+    transform:.4s;
+}
+
+form .signin-content input:focus~label,
+form .signin-content input:valid~label{
+    top:-5px;
+    color:orange;
+}
+
+form .signin-content input:focus~span::before,
+form .signin-content input:valid~span::before{
+ width:100%;
+}
+
+.signin-body form button{
+    padding:10px 20px;
+    font-size:17px;
+    background-color:#ff6600;
+    color:white;
+    border:5px;
+    border-radius: 30px;
+    cursor:pointer;
+    transition:all .4s ease-in;
+}
+form span{
+    color:orangered;
+}
+/*      Signup           */
+
+.Signup .Signup-box{
+    flex:1;
+}
+#signinpage-background ,#signuppage-background{
+    background-image: url('./images/coffee.jpg');
+    background-repeat:no-repeat;
+    background-size:  100%;
+}
+body{
+    background-color: #404040;
+}
+    .Signup {
+        width: 300px; 
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-content h2{
+     margin-top: 10px;
+     text-align: center;
+     color: #fff;
+    }
+
+.Signup .Signup-box ,
+.Signup .Signup-box .Signup-body{
+    height:100%;
+}
+.Signup-body form{
+    padding:10px 40px;
+    box-sizing:border-box;
+}
+form .Signup-content{
+    position:relative;
+    margin:30px 0;
+    border-bottom:2px solid lightgray;;
+}
+
+form .Signup-content input{
+    width:100%;
+    height:40px;
+    padding:0 5px;
+    font-size:17px;
+    border:none;
+    background:none;
+    outline:none;
+    color:black;
+}
+form .Signup-content label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    color:gray;
+    transform:translateY(-50%);
+    font-size: 17px;
+    transition:0.5s;
+    pointer-events:none;
+}
+
+form .Signup-content span::before{
+    content: '';
+    position: absolute;
+    top:40px;
+    left:0;
+    width:0%;
+    height:2px;
+    background: orange;
+    transform:.4s;
+}
+
+form .Signup-content input:focus~label,
+form .Signup-content input:valid~label{
+    top:-5px;
+    color:orange;
+}
+
+form .Signup-content input:focus~span::before,
+form .Signup-content input:valid~span::before{
+ width:100%;
+}
+
+.Signup-body form button{
+    padding:10px 20px;
+    font-size:17px;
+    border:none;
+    background-color:#ff6600;
+    color:white;
+    border:5px;
+    border-radius: 30px;
+    cursor:pointer;
+    transition:all .4s ease-in;
+}
+
+.content-body form button:hover{
+    background-color: #ff6681;
+}
+form span{
+    color:orangered;
+}
+
+
+/*            Footer                 */
+
+.footer{
+    background-color: #404040;
+    border-top: 2px solid #333333;
+}
+.footer .footer-box{
+    padding:30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-box .social-media a{
+    color:white;
+    background-color:#333333;
+    border-radius:50%;
+    font-size:17px;
+    padding:10px;
+    margin:5px;
+}
+
+.footer .footer-box .social-media a:hover{
+    opacity:.7;
+    transition:.5s all ease-in-out;
+}
+.footer .footer-box .copyright{
+    color:white;
+    font-size:20px;
+}
+.footer .footer-box .brand{
+    color:white;
+    font-size:20px;
+}
+.footer .footer-box .brand span {
+    color:orange;
+}
+
+@media(max-width:992px){
+    header{
+        flex-direction: column;
+        height:150px;
+        background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    }
+
+    .menu-header .log a{
+        font-size:25px;
+    }
+
+    header nav ul li a {
+        font-size:16px;
+        flex-direction: column;
+        display:inline-block;
+        margin-top: 10px;
+    }
+
+    header nav{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .content h2{
+        font-size:28px;
+    }
+
+    .content p{
+        font-size:18px;
+    }
+}
+
+@media(max-width:950px){
+    .contact .contact-box{
+        flex:100%;
+    }
+}
+@media(max-width:800px){
+    .menu .menu-content .hot-coffees,
+    .cold-coffees,.frappucino-coffees{
+        margin:20px;
+    }
+}
+
+@media(max-width:700){
+    .footer .footer-box .social-media a{
+        color:white;
+        background-color: #333333;
+        border-radius:50%;
+        font-size:16px;
+        padding:5px;
+    }
+
+    .footer .footer-box .copyright{
+        color:white;
+        font-size:15px;
+    }
+
+    .footer .footer-box .brand{
+        color:white;
+        font-size:18px;
+    }
+}
+
+@media(max-width:500px){
+    header{
+        height:130px;
+    }
+
+    header .logo a {
+        font-size:23;
+    }
+
+    header nav ul li a{
+        font-size:13px;
+        flex-direction: column;
+        display:inline-block;
+        margin-top:10px;
+    }
+
+    header nav{
+        display:flex;
+        flex-direction: column;
+    }
+    
+.content h2{
+    font-size:23px;
+    
+}
+.content p{
+    font-size:16px;
+}
+
+.footer .footer-box{
+    flex-direction: column;
+}
+
+.footer .footer-box .social-media a{
+    color:white;
+    background-color:#333333;
+    border-radius:50%;
+    font-size:16px;
+    padding:10px;
+    margin-top:10px;
+    display:inline-block;
+}
+
+.footer .footer-box .copyright{
+    color:white;
+    font-size:15px;
+    margin-top:10px;
+}
+
+.footer .footer-box .brand{
+    color:white;
+    font-size:18px;
+    margin-top:10px;
+}
+}
+
+@media(max-width:410px){
+
+    header{
+        height:120px;
+    }
+
+    header .logo a{
+        font-size:20px;
+        color:white;
+        padding:15px 30px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+        flex-direction: column;
+        display: inline-block;
+        margin-top:10px;
+        color:white;
+        padding:5px 5px;
+    }
+    header nav {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .content h2{
+        font-size:20px;
+    }
+
+    .content p{
+        font-size:13px;
+    }
+}
+
+/*---------------------Cart-item--------------*/
+#header nav ul {
+    display:inline-flex;
+    font-size: 17px;
+    
+}
+#header nav ul li a{
+    flex-direction: column;
+    display: inline-block;
+    margin-top: 10px;
+    color:white;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+#cartbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#header{
+    height: 80px;
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 40px;
+    color: white;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    border-radius:30px;
+}
+.cart {
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid {
+    color: goldenrod;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+.cart-container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+    color:#fff;
+    text-align: center;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    color:goldenrod;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.foot h2{
+    color:goldenrod;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+.bottom h2{
+    font-size: 20px;
+    color: red;
+    margin-top: 10px;
+}
+button{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
